@@ -1,17 +1,17 @@
 $(document).ready(function(){
 
 
-    // Load in the clips and place them in the document
-    $.getJSON('clips.json', function(clips) {
-        //clips is the JSON string
-        clipdiv = $("#clips")
+    // Load in the props and place them in the document
+    $.getJSON('props.json', function(props) {
+        //props is the JSON string
+        propdiv = $("#props")
 
         usedIndices = new Set()
 
-        for (i=0; i < clips.length; i++) {
-            usedIndices.add(clips[i]["index"])
-            console.log("Added "+clips[i]["index"])
-            clipdiv.append("<div class=\"clip text-center\">Clip "+(i+1)+": <audio controls><source src=\""+clips[i]["file"]+"\" type=\"audio/mp3\"></audio> <span class=\"answerlabel\">Answer:</span> <select class=\"answers\"></select></div>")
+        for (i=0; i < props.length; i++) {
+            usedIndices.add(props[i]["index"])
+            console.log("Added "+props[i]["index"])
+            propdiv.append("<div class=\"prop text-center\">Prop "+(i+1)+": <img width=\"200\" height=\"auto\" src=\""+props[i]["file"]+"\" > <span class=\"answerlabel\">Answer:</span> <select class=\"answers\"></select></div>")
         }
 
         
@@ -42,16 +42,16 @@ $(document).ready(function(){
         $("#fadediv").show();
         answers = $(".answers");
 
-        $.getJSON('clips.json', function(clips) {
-            //clips is the JSON string
-            clipdiv = $("#clips")
+        $.getJSON('props.json', function(props) {
+            //props is the JSON string
+            propdiv = $("#props")
             answerlabels = $(".answerlabel")
     
             score = 0;
 
-            for (i=0; i < clips.length; i++) {
+            for (i=0; i < props.length; i++) {
                 answer = answers.eq(i).val()
-                if (answer == clips[i]["index"]) {
+                if (answer == props[i]["index"]) {
                     answerlabels.eq(i).removeClass("wrong")
                     answerlabels.eq(i).addClass("correct")
                     score += 1
@@ -66,15 +66,15 @@ $(document).ready(function(){
             // Set the colours and scores
             if (score < 5) {
                 $("#answerdiv").css("background-color","red")
-                $("#sarkycomment").text("Maybe you should pay more attention at the start?")
+                $("#sarkycomment").text("All that effort - and for what?")
             }
             else if (score < 14) {
                 $("#answerdiv").css("background-color","orange")
-                $("#sarkycomment").text("Not bad, but maybe spare a bit more love for the band.")
+                $("#sarkycomment").text("Not bad, shows you're paying attention.")
             }
             else {
                 $("#answerdiv").css("background-color","green")
-                $("#sarkycomment").text("You are truly a musicals geek.")
+                $("#sarkycomment").text("Well done!  The propmaster is weeping with appreciation.")
 
             }
 

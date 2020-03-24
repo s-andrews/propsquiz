@@ -1,70 +1,70 @@
 [
     {
-        "file" : "clips/clip1.mp3",
-        "index" : 302
+        "file" : "images/cloth_bolt.jpg",
+        "index" : 777
     },
     {
-        "file" : "clips/clip2.mp3",
-        "index" : 937
+        "file" : "images/coffin.jpg",
+        "index" : 1139
     },
     {
-        "file" : "clips/clip3.mp3",
-        "index" : 957
+        "file" : "images/dumpster.jpg",
+        "index" : 1490
     },
     {
-        "file" : "clips/clip4.mp3",
+        "file" : "images/elvis_wig.png",
+        "index" : 893
+    },
+    {
+        "file" : "images/gin_bottle.jpg",
+        "index" : 102
+    },
+    {
+        "file" : "images/glue.jpg",
+        "index" : 1029
+    },
+    {
+        "file" : "images/milk_pail.jpg",
+        "index" : 668
+    },
+    {
+        "file" : "images/pebbles.jpg",
+        "index" : 1082
+    },
+    {
+        "file" : "images/pigeon.jpg",
+        "index" : 1216
+    },
+    {
+        "file" : "images/plasters.jpg",
         "index" : 971
     },
     {
-        "file" : "clips/clip5.mp3",
-        "index" : 772
+        "file" : "images/rabbit.jpg",
+        "index" : 1359
     },
     {
-        "file" : "clips/clip6.mp3",
-        "index" : 418
+        "file" : "images/red_rose.jpg",
+        "index" : 190
     },
     {
-        "file" : "clips/clip7.mp3",
-        "index" : 559
+        "file" : "images/rubber_gloves.jpg",
+        "index" : 28
     },
     {
-        "file" : "clips/clip8.mp3",
-        "index" : 1392
+        "file" : "images/tommy_gun.jpg",
+        "index" : 107
     },
     {
-        "file" : "clips/clip9.mp3",
-        "index" : 779
+        "file" : "images/typewriter.jpg",
+        "index" : 1419
     },
     {
-        "file" : "clips/clip10.mp3",
-        "index" : 15
+        "file" : "images/wheelchair.jpg",
+        "index" : 1263
     },
     {
-        "file" : "clips/clip11.mp3",
-        "index" : 247
-    },
-    {
-        "file" : "clips/clip12.mp3",
-        "index" : 1503
-    },
-    {
-        "file" : "clips/clip13.mp3",
-        "index" : 1393
-    },
-    {
-        "file" : "clips/clip14.mp3",
-        "index" : 599
-    },
-    {
-        "file" : "clips/clip15.mp3",
-        "index" : 714
-    },
-    {
-        "file" : "clips/clip16.mp3",
-        "index" : 1307
-    },
-    {
-        "file" : "clips/clip17.mp3",
-        "index" : 1043
+        "file" : "images/whooppee_cushion.jpg",
+        "index" : 776
     }
 ]

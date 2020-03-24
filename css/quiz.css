@@ -1,10 +1,10 @@
 .jumbotron {
-    background-color: darkorchid;
+    background-color: darkblue;
     color: white;
     
 }
 
-div.clip {
+div.prop {
     font-size: 150%;
     padding-top: 1em;
 }
@@ -73,7 +73,7 @@ audio {
 
 /* Some optimisations for phones */
 @media only screen and (max-width: 800px) {
-    div.clip {
+    div.prop {
         font-size: 100%;
     }
 
