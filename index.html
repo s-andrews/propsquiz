@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Musicals Quiz</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/quiz.css">
+
+  </head>
+  <body>
+
+    <div class="jumbotron text-center">
+        <h1>Musicals Quiz</h1>
+        <p>Do you concentrate at the start?</p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+
+            <div class="col-md-8">
+                <!-- The main content for the quiz -->
+
+                <p>
+                    This quiz is the revenge of the pit band.  Sure, everyone remembers the show stopping songs, but what
+                    about the poor musicians sitting under the stage in the dark?  Who is even listening at the start of
+                    the show when they're playing their hearts out and everyone just wants the cast to get on with it?
+                </p>
+                <p>
+                    Below are a selection of clips of the very starts of a number of different shows.  All you have to do
+                    is to identify them.  That's got to be easy, right?  Oh, they're quite short though...
+                </p>
+                <p>
+                    So it was apparently too hard like that :-)  I've changed it so that you now only see the shows which
+                    are the answers and you have to put them in the right order.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+            <div class="col-md-8" id="clips">
+                
+
+            </div>    
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <!-- Provide some space on the left -->
+            </div>
+            <div class="col-md-8 text-center">
+                <button id="answercheck" class="btn btn-success">Check my answers</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="fadediv"></div>
+
+    <div id="answerdiv">
+        <h1 class="text-center">Your score was <span id="finalscore">0</span> out of 17!</h1>
+
+        <p class="text-center" id="sarkycomment">
+            Maybe you should pay more attention at the start?
+        </p>
+
+        <p class="text-center">
+            <button id="changeanswers" class="btn playagain">Change my Answers</button>
+            <button id="playagain" class="btn playagain">Play Again</button>
+        </p>
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ 
+    <!-- select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="main.js"></script>
+
+    </body>
+</html>
